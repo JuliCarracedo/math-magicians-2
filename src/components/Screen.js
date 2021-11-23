@@ -7,7 +7,7 @@ class Screen extends React.Component {
     const { content } = this.props;
     return (
       <div className="screen">
-        <p>{content}</p>
+        <p className="output">{content}</p>
       </div>
     );
   }
