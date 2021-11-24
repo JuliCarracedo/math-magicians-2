@@ -17,7 +17,6 @@ class Calculator extends React.Component {
     e.stopPropagation();
     const current = this.state;
     this.setState(calculate(current, keyPressed));
-    console.log(this.state);
   }
 
   render() {
