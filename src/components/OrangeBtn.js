@@ -4,17 +4,18 @@ import PropTypes from 'prop-types';
 
 class OrangeBtn extends React.Component {
   render() {
-    const { symbol } = this.props;
+    const { symbol, btnHandler } = this.props;
     return (
-      <div className="orange-btn">
+      <button type="button" className="orange-btn" onClick={(e) => btnHandler(e, symbol)}>
         <p>{symbol}</p>
-      </div>
+      </button>
     );
   }
 }
 
 OrangeBtn.propTypes = {
   symbol: PropTypes.string.isRequired,
+  btnHandler: PropTypes.func.isRequired,
 };
 
 export default OrangeBtn;

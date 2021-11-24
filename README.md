@@ -1,7 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Math Magicians
-> One paragraph statement about the project.
+> Enjoy solving simple math questions while getting inspired by the greatest mathematicians!
+
+![](./screenshot.PNG)
 
 ## Built With
 

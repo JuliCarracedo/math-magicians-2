@@ -7,14 +7,17 @@ class Screen extends React.Component {
     const { content } = this.props;
     return (
       <div className="screen">
-        <p className="output">{content}</p>
+        <p className="output">{content || 0}</p>
       </div>
     );
   }
 }
 
 Screen.propTypes = {
-  content: PropTypes.string.isRequired,
+  content: PropTypes.string,
 };
 
+Screen.defaultProps = {
+  content: '0',
+};
 export default Screen;
