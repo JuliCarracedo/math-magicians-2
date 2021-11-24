@@ -38,6 +38,7 @@ body {
   width: 4rem;
   margin: 1px;
   text-align: center;
+  border-width: 0;
 }
 
 .big-gray-btn {
@@ -46,6 +47,7 @@ body {
   width: 8.15rem;
   margin: 1px;
   text-align: center;
+  border-width: 0;
 }
 
 .orange-btn {
@@ -54,4 +56,5 @@ body {
   width: 4rem;
   margin: 1px;
   text-align: center;
+  border-width: 0;
 }
