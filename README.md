@@ -34,11 +34,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 
-- Use ```yarn install``` in the code editor's command line
+- Use ```npm install``` in the code editor's command line
 
 ### Usage
 
-- Use ```yarn start``` to launch the app 
+- Use ```npm start``` to launch the app 
 
 
 ## Author
