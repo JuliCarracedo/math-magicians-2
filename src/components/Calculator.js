@@ -1,62 +1,54 @@
 /* eslint-disable react/prefer-stateless-function */
-import React from 'react';
+import React, { useState } from 'react';
 import GrayBtn from './GrayBtn';
 import OrangeBtn from './OrangeBtn';
 import BigGrayBtn from './BigGrayBtn';
 import Screen from './Screen';
 import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
-  constructor() {
-    super();
-    this.state = { };
-    this.btnHandler = this.btnHandler.bind(this);
-  }
+const Calculator = () => {
+  const [state, setState] = useState({});
 
-  btnHandler(e, keyPressed) {
+  const btnHandler = (e, keyPressed) => {
     e.stopPropagation();
-    const current = this.state;
-    this.setState(calculate(current, keyPressed));
-    console.log(this.state);
-  }
-
-  render() {
-    const { total, next } = this.state;
-    return (
-      <div className="calc-body">
-        <Screen content={next || total} />
-        <div className="row">
-          <GrayBtn symbol="AC" btnHandler={this.btnHandler} />
-          <GrayBtn symbol="+/-" btnHandler={this.btnHandler} />
-          <GrayBtn symbol="%" btnHandler={this.btnHandler} />
-          <OrangeBtn symbol="÷" btnHandler={this.btnHandler} />
-        </div>
-        <div className="row">
-          <GrayBtn symbol="7" btnHandler={this.btnHandler} />
-          <GrayBtn symbol="8" btnHandler={this.btnHandler} />
-          <GrayBtn symbol="9" btnHandler={this.btnHandler} />
-          <OrangeBtn symbol="x" btnHandler={this.btnHandler} />
-        </div>
-        <div className="row">
-          <GrayBtn symbol="4" btnHandler={this.btnHandler} />
-          <GrayBtn symbol="5" btnHandler={this.btnHandler} />
-          <GrayBtn symbol="6" btnHandler={this.btnHandler} />
-          <OrangeBtn symbol="-" btnHandler={this.btnHandler} />
-        </div>
-        <div className="row">
-          <GrayBtn symbol="1" btnHandler={this.btnHandler} />
-          <GrayBtn symbol="2" btnHandler={this.btnHandler} />
-          <GrayBtn symbol="3" btnHandler={this.btnHandler} />
-          <OrangeBtn symbol="+" btnHandler={this.btnHandler} />
-        </div>
-        <div className="row">
-          <BigGrayBtn symbol="0" btnHandler={this.btnHandler} />
-          <GrayBtn symbol="." btnHandler={this.btnHandler} />
-          <OrangeBtn symbol="=" btnHandler={this.btnHandler} />
-        </div>
+    const current = state;
+    setState(calculate(current, keyPressed));
+  };
+  const { total, next } = state;
+  return (
+    <div className="calc-body">
+      <Screen content={next || total} />
+      <div className="row">
+        <GrayBtn symbol="AC" btnHandler={btnHandler} />
+        <GrayBtn symbol="+/-" btnHandler={btnHandler} />
+        <GrayBtn symbol="%" btnHandler={btnHandler} />
+        <OrangeBtn symbol="÷" btnHandler={btnHandler} />
       </div>
-    );
-  }
-}
+      <div className="row">
+        <GrayBtn symbol="7" btnHandler={btnHandler} />
+        <GrayBtn symbol="8" btnHandler={btnHandler} />
+        <GrayBtn symbol="9" btnHandler={btnHandler} />
+        <OrangeBtn symbol="x" btnHandler={btnHandler} />
+      </div>
+      <div className="row">
+        <GrayBtn symbol="4" btnHandler={btnHandler} />
+        <GrayBtn symbol="5" btnHandler={btnHandler} />
+        <GrayBtn symbol="6" btnHandler={btnHandler} />
+        <OrangeBtn symbol="-" btnHandler={btnHandler} />
+      </div>
+      <div className="row">
+        <GrayBtn symbol="1" btnHandler={btnHandler} />
+        <GrayBtn symbol="2" btnHandler={btnHandler} />
+        <GrayBtn symbol="3" btnHandler={btnHandler} />
+        <OrangeBtn symbol="+" btnHandler={btnHandler} />
+      </div>
+      <div className="row">
+        <BigGrayBtn symbol="0" btnHandler={btnHandler} />
+        <GrayBtn symbol="." btnHandler={btnHandler} />
+        <OrangeBtn symbol="=" btnHandler={btnHandler} />
+      </div>
+    </div>
+  );
+};
 
 export default Calculator;
