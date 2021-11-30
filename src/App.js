@@ -1,9 +1,11 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Switch } from 'react-router-dom';
+import { Route } from 'react-router';
+import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Calculator from './components/Calculator';
 import Home from './components/Home';
+import Quote from './components/Quote';
 
 function App() {
   return (
@@ -11,8 +13,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" render={() => <Home />} />
-          <Route path="/calc" render={() => <Calculator />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/calc" element={<Calculator />} />
+          <Route path="/quote" element={<Quote />} />
         </Routes>
       </Router>
     </React.StrictMode>
