@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Quote = () => (
-  <div>
+  <div className="quote">
     <p>
       &quot;Mathematics is language that God used to write the world&quot;
       : Galileo Galilei
