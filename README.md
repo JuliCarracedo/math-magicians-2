@@ -40,6 +40,9 @@ To get a local copy up and running follow these simple example steps.
 
 - Use ```npm start``` to launch the app 
 
+### Test
+
+- Use ```npm test``` to run the test script
 
 ## Author
 
