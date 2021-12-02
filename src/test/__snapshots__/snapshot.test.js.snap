@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <nav
+    className="navbar"
+  >
+    <h2>
+       MATH MAGICIANS
+    </h2>
+    <div
+      className="links"
+    >
+      <a
+        className="link"
+        href="/"
+        onClick={[Function]}
+      >
+         Home 
+      </a>
+      <a
+        className="link"
+        href="/calc"
+        onClick={[Function]}
+      >
+         Calculator 
+      </a>
+      <a
+        className="link"
+        href="/quote"
+        onClick={[Function]}
+      >
+         Quote 
+      </a>
+    </div>
+  </nav>,
+  <div
+    className="home"
+  >
+    <h2>
+      Welcome to our page
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur nisl vel leo congue, non aliquet urna malesuada. Mauris consectetur eget dolor sollicitudin vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Phasellus et feugiat diam. Aenean id lorem accumsan, auctor nisl eget, congue lectus. Nullam congue vel nisi vitae interdum. Integer lectus nibh, tincidunt eget libero sed, sagittis maximus quam. Cras lobortis vestibulum dolor, vel feugiat leo convallis eget.
+    </p>
+  </div>,
+]
+`;
+
+exports[`renders correctly 2`] = `
+<div
+  className="calc-section"
+>
+  <h2>
+    Let's do some math!
+  </h2>
+  <div
+    className="calc-body"
+  >
+    <div
+      className="screen"
+    >
+      <p
+        className="output"
+      >
+        0
+      </p>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          AC
+        </p>
+      </button>
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          +/-
+        </p>
+      </button>
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          %
+        </p>
+      </button>
+      <button
+        className="orange-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          ÷
+        </p>
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          7
+        </p>
+      </button>
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          8
+        </p>
+      </button>
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          9
+        </p>
+      </button>
+      <button
+        className="orange-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          x
+        </p>
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          4
+        </p>
+      </button>
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          5
+        </p>
+      </button>
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          6
+        </p>
+      </button>
+      <button
+        className="orange-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          -
+        </p>
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          1
+        </p>
+      </button>
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          2
+        </p>
+      </button>
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          3
+        </p>
+      </button>
+      <button
+        className="orange-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          +
+        </p>
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="big-gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          0
+        </p>
+      </button>
+      <button
+        className="gray-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          .
+        </p>
+      </button>
+      <button
+        className="orange-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          =
+        </p>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly 3`] = `
+<div
+  className="home"
+>
+  <h2>
+    Welcome to our page
+  </h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur nisl vel leo congue, non aliquet urna malesuada. Mauris consectetur eget dolor sollicitudin vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Phasellus et feugiat diam. Aenean id lorem accumsan, auctor nisl eget, congue lectus. Nullam congue vel nisi vitae interdum. Integer lectus nibh, tincidunt eget libero sed, sagittis maximus quam. Cras lobortis vestibulum dolor, vel feugiat leo convallis eget.
+  </p>
+</div>
+`;
+
+exports[`renders correctly 4`] = `
+<div
+  className="quote"
+>
+  <p>
+    "Mathematics is language that God used to write the world" : Galileo Galilei
+  </p>
+  <p>
+    "Mathematics seems to give one a new meaning" : Charles Darwin
+  </p>
+  <p>
+    "The essence of mathematics is not to make simple things complicated, but make complicated things simple" :S. Gudder.
+  </p>
+  <p>
+    "Pure mathematics is, in its form, the poetry of logical ideas" : Albert Einstein
+  </p>
+</div>
+`;
