@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test pages test calculator page 1`] = `
+<h2>
+  Let's do some math!
+</h2>
+`;
+
+exports[`test pages test qoute page 1`] = `
+<p>
+  "Mathematics is language that God used to write the world" : Galileo Galilei
+</p>
+`;
+
+exports[`test pages testing home page 1`] = `
+<h2>
+  Welcome to our page
+</h2>
+`;
